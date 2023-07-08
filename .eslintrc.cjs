@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -22,7 +20,7 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'prettier', '@typescript-eslint'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -30,5 +28,6 @@ module.exports = {
     ],
     '@typescript-eslint/no-non-null-assertion': 'off',
     'react/react-in-jsx-scope': 'off',
+    'prettier/prettier': 'error',
   },
 }
